@@ -16,6 +16,7 @@ MOCK_ANSWERS = {
     "HTTP 404 ne anlama gelir?": "Kaynak bulunamadı",
     "HTTP 200 ne anlama gelir?": "Başarılı",
     "Python'da liste hangi parantezle yazılır?": "[]",
+    "Almanya'nın başkenti neresi?": "Berlin",
 }
 
 
