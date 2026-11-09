@@ -44,4 +44,3 @@ python -m pytest -v
 Tests use `TestClient` and do not require a running server. If your existing
 environment is named `.venv-1`, use that activation path instead of `.venv`.
 
-See [the Turkish project walkthrough](PROJE_OZETI.md) for diagrams and explanations.
