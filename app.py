@@ -7,6 +7,17 @@ from pydantic import BaseModel, Field
 
 app = FastAPI(title="LLM API Lab")
 
+MOCK_ANSWERS = {
+    "Fransa'nın başkenti neresi?": "Paris",
+    "Türkiye'nin başkenti neresi?": "Ankara",
+    "2 + 2 kaçtır?": "4",
+    "3 x 3 kaçtır?": "9",
+    "JSON bir veri formatı mıdır?": "Evet",
+    "HTTP 404 ne anlama gelir?": "Kaynak bulunamadı",
+    "HTTP 200 ne anlama gelir?": "Başarılı",
+    "Python'da liste hangi parantezle yazılır?": "[]",
+}
+
 
 class ChatRequest(BaseModel):
     prompt: str = Field(min_length=1, max_length=500)
@@ -18,7 +29,8 @@ class ChatResponse(BaseModel):
 
 
 def make_answer(prompt: str) -> ChatResponse:
-    return ChatResponse(answer=f"Mock yanıt: {prompt}", confidence=0.99)
+    answer = MOCK_ANSWERS.get(prompt, f"Mock yanıt: {prompt}")
+    return ChatResponse(answer=answer, confidence=0.99)
 
 
 @app.post("/chat", response_model=ChatResponse)

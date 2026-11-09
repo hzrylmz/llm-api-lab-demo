@@ -1,0 +1,12 @@
+[
+  {"id": "capital-fr", "prompt": "Fransa'nın başkenti neresi?", "expected_answer": "Paris"},
+  {"id": "capital-tr", "prompt": "Türkiye'nin başkenti neresi?", "expected_answer": "Ankara"},
+  {"id": "addition", "prompt": "2 + 2 kaçtır?", "expected_answer": "4"},
+  {"id": "multiplication", "prompt": "3 x 3 kaçtır?", "expected_answer": "9"},
+  {"id": "json", "prompt": "JSON bir veri formatı mıdır?", "expected_answer": "Evet"},
+  {"id": "http-404", "prompt": "HTTP 404 ne anlama gelir?", "expected_answer": "Kaynak bulunamadı"},
+  {"id": "http-200", "prompt": "HTTP 200 ne anlama gelir?", "expected_answer": "Başarılı"},
+  {"id": "python-list", "prompt": "Python'da liste hangi parantezle yazılır?", "expected_answer": "[]"},
+  {"id": "capital-de", "prompt": "Almanya'nın başkenti neresi?", "expected_answer": "Berlin"},
+  {"id": "subtraction", "prompt": "10 - 3 kaçtır?", "expected_answer": "7"}
+]
