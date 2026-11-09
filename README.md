@@ -1,7 +1,7 @@
 # LLM API Lab
 
 A local learning demo for REST, JSON, Pydantic validation, SSE streaming,
-and dataset-based evaluation. No real LLM, API key, or paid service required.
+and dataset-based evaluation. 
 
 ## Run
 
